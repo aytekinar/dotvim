@@ -7,3 +7,6 @@
 [submodule "pack/plugins/start/vim-airline-themes"]
 	path = pack/plugins/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "pack/plugins/start/syntastic"]
+	path = pack/plugins/start/syntastic
+	url = https://github.com/vim-syntastic/syntastic
