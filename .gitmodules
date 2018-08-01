@@ -13,3 +13,6 @@
 [submodule "pack/plugins/start/tabular"]
 	path = pack/plugins/start/tabular
 	url = https://github.com/godlygeek/tabular
+[submodule "pack/plugins/start/vimtex"]
+	path = pack/plugins/start/vimtex
+	url = https://github.com/lervag/vimtex

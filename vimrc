@@ -88,7 +88,7 @@ set textwidth=80
 set autoindent smartindent
 
 " Map leader
-let mapleader = ","
+let mapleader = ','
 
 " Fast saving, quitting and saving & quitting
 nmap <leader>w :w!<cr>
@@ -141,3 +141,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" vimtex settings
+let g:tex_flavor = 'latex'
+let g:vimtex_view_method = 'zathura'
