@@ -1,109 +1,99 @@
-" vim's shell
-set shell=fish
-
-" Incompatible for vi
+" Disable compatibility with vi
 set nocompatible
 
-" Filetype detection, plugin and indent file loading: ON
+" Enable filetype detection, plugin and indent file loading
 filetype plugin indent on
 
-" Syntax highlighting: ENABLED
-syntax enable 
+" Enable syntax highlighting
+syntax enable
 
-" Standard encoding: UTF-8
+" Set vim's shell
+set shell=fish
+
+" Set standard encoding
 set encoding=utf-8
 
-" Standard file format: UNIX
+" Set standard file format
 set fileformats=unix,dos,mac
 
-" Number of lines to remember: 700
+" Set number of lines to remember
 set history=700
 
-" Auto-read when a file is changed from the outside
+" Enable automatic reading of a file when changed from the outside
 set autoread
 
-" Map leader to comma
+" Set minimum number of screen lines above and below the cursor
+set scrolloff=7
+
+" Enable enhanced command-line completion
+set wildmenu
+
+" Ignore compiled files in completions
+set wildignore=*.o,*.so,*.a
+
+" Enable ruler to show line and column number of the cursor
+set ruler
+
+" Set height of the command bar
+set cmdheight=2
+
+" Hide abandoned buffers
+set hidden
+
+" Configure backspace so that it acts as intended
+set backspace=indent,eol,start
+
+" Smartly ignore case when searching
+set ignorecase smartcase
+
+" Highlight search results
+set hlsearch
+
+" Enable incremental search, i.e., "search as you type"
+set incsearch
+
+" Disable redrawing of the screen while executing macros
+set lazyredraw
+
+" Change special characters in search patterns
+set magic
+
+" Show matching brackets when text indicator is over them
+set showmatch
+
+" Set interval of showing the matching paren (tenths of a second)
+set matchtime=2
+
+" Disable annoying sound/flash on errors
+set noerrorbells novisualbell
+
+" Set timeout length for key codes and mapped keys
+set timeoutlen=500
+
+" Disable file backups
+set nobackup nowritebackup noswapfile
+
+" Use spaces instead of tabs
+set expandtab smarttab
+set shiftwidth=2
+set tabstop=2
+
+" Set linebreak to visually wrap long lines
+set linebreak wrap
+
+" Set textwidth to break long lines
+set textwidth=80
+
+" Enable smart autoindent
+set autoindent smartindent
+
+" Map leader
 let mapleader = ","
 
 " Fast saving, quitting and saving & quitting
 nmap <leader>w :w!<cr>
 nmap <leader>q :q!<cr>
 nmap <leader>x :x<cr>
-
-" Minimum number of screen lines above and below the cursor
-set scrolloff=7
-
-" Use wild menu for enhanced command-line completion
-set wildmenu
-
-" Ignore compiled files in completions
-set wildignore=*.o,*.so,*.a
-
-" Show line and column number of the cursor
-set ruler
-
-" Height of the command bar
-set cmdheight=2
-
-" A buffer becomes hidden when it is abandoned
-set hidden
-
-" Configure backspace so it acts as it should act
-set backspace=indent,eol,start
-
-" Ignore case when searching
-set ignorecase
-
-" Be smart when ignoring the case, though
-set smartcase
-
-" Highlight search results
-set hlsearch
-
-" Makes search act like search in modern browsers
-set incsearch 
-
-" Don't redraw while executing macros (good performance config)
-set lazyredraw 
-
-" For regular expressions turn magic on
-set magic
-
-" Show matching brackets when text indicator is over them
-set showmatch 
-
-" How many tenths of a second to blink when matching brackets
-set matchtime=2
-
-" No annoying sound/flash on errors
-set noerrorbells
-set novisualbell
-
-" Timeout length for key codes and mapped keys
-set timeoutlen=500
-
-" Turn file backups off
-set nobackup
-set nowritebackup
-set noswapfile
-
-" Use spaces instead of tabs
-set expandtab
-
-" Be smart when using tabs
-set smarttab
-
-" <TAB> equals 2 spaces
-set shiftwidth=2
-set tabstop=2
-
-" Linebreak on 80 characters
-set linebreak
-set textwidth=80
-
-set autoindent
-set smartindent
-set wrap
 
 " Disable arrow keys
 noremap <left> <Nop>
@@ -117,8 +107,11 @@ inoremap <right> <Nop>
 inoremap <up> <Nop>
 
 " Show (relative) line numbers
-set number
-set relativenumber
+set number relativenumber
+
+" Show all white space characters
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:< " ,space:␣
+set list
 
 " vim-airline settings
 set laststatus=2
