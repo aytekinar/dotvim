@@ -113,6 +113,15 @@ set number relativenumber
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:< " ,space:␣
 set list
 
+" Set column to color
+set colorcolumn=80
+
+" GUI options
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r
+set guioptions-=L
+
 " vim-airline settings
 set laststatus=2
 let g:airline_powerline_fonts = 1
