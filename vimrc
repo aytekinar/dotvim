@@ -16,6 +16,9 @@ set encoding=utf-8
 " Set standard file format
 set fileformats=unix,dos,mac
 
+" Search all the subdirectories inside the current directory
+set path+=**
+
 " Set number of lines to remember
 set history=700
 
