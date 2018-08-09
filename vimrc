@@ -162,5 +162,5 @@ let g:vimtex_view_method = 'zathura'
 packadd! matchit
 
 " julia-vim settings
-let g:default_julia_version = '0.7'
+let g:default_julia_version = '1.0'
 let g:julia_syntax_highlight_deprecated = 1
