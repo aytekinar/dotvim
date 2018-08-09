@@ -19,3 +19,6 @@
 [submodule "pack/plugins/start/nerdtree"]
 	path = pack/plugins/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree
+[submodule "pack/plugins/start/julia-vim"]
+	path = pack/plugins/start/julia-vim
+	url = https://github.com/JuliaEditorSupport/julia-vim

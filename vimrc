@@ -157,3 +157,10 @@ let g:syntastic_check_on_wq = 0
 " vimtex settings
 let g:tex_flavor = 'latex'
 let g:vimtex_view_method = 'zathura'
+
+" enable matchit plugin (needed for julia-vim's jumping support)
+packadd! matchit
+
+" julia-vim settings
+let g:default_julia_version = '0.7'
+let g:julia_syntax_highlight_deprecated = 1
