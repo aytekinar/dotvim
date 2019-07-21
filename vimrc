@@ -141,7 +141,11 @@ nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
 
 " solarized color scheme
-set background=dark
+if has( "gui_running" )
+  set background=light
+else
+  set background=dark
+endif
 colorscheme solarized
 
 " syntastic settings
