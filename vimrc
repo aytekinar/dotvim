@@ -142,9 +142,10 @@ nmap <leader>9 <Plug>AirlineSelectTab9
 
 " solarized color scheme
 if has( "gui_running" )
-  set background=light
+  set background=dark
 else
   set background=dark
+  let g:solarized_termtrans=1
 endif
 colorscheme solarized
 
